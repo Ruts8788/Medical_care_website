@@ -1,0 +1,378 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* --------------------------hero----------------- */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 30%;
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-caption .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+.appointment-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(25, 24, 24, 0.2);
+}
+.navbar-nav .nav-item .nav-link
+{
+    color: white;
+    padding-left: 20px;
+    
+}
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+/* Navbar Link Styling */
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    padding-left: 20px;
+    transition: 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-item .nav-link:hover {
+    color: chartreuse;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust for Fixed Navbar */
+section {
+    padding-top: 80px; /* Prevent content from hiding under navbar */
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
+  
+
+/* --------------------section2------------------ */
+.specialists-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.specialist-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out  forwards;
+}
+.specialist-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.specialist-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .specialist-card {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* -------------------section4---------------- */
+.doctor-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.doctor-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.info-box {
+    background: #e8f0fe;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/* ------------------contact---------------- */
+
+       .consultation-form {
+            background: linear-gradient(to right, #4a90e2, #50b3a2);
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+        .business-hours {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .emergency {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #357abd;
+        }
+
+        /* ----------------------------services------------------------- */
+              
+/* Section Title Styling */
+h6.text-primary {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-top: 50px;
+}
+
+h2.fw-bold {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+.service-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;  
+    position: relative;
+}
+
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.service-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.service-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Card Paragraph */
+.service-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    max-height: 40px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+/* Button Styling */
+.service-card .btn-dark {
+    padding: 7px 15px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+
+.service-card .btn-dark:hover {
+    background: #333;
+    transform: scale(1.1);
+}
+
+
+.service-card.dental {
+    background: #f9e7ea; 
+}
+
+.service-card.eye {
+    background: #e2f2fd; 
+}
+
+.service-card.skin {
+    background: #f4e5f6; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Keyframe Animation for Icons */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ----------------------footer--------------------------- */
+.banner {
+    background: linear-gradient(#A9B5DF,#7886C7,#2D336B);
+    color: rgba(255, 255, 255, 0.847);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:350px;
+    
+    
+}
+.text-content {
+    max-width: 50%;
+    color: white;
+}
+.text-content .p{
+    font-size: 10px;
+    margin-top: 5px;
+    
+}
+
+.image-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+    margin-top: 20px;
+    margin-right: -5px;
+}
+
+
+.icon1 i {
+    font-size: 20px;
+    color: #ffffff; /* Default icon color */
+    background-color: #007bff; /* Icon background */
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.icon1 i:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon1 i.fa-facebook {
+    background-color: #1877f2;
+}
+
+.icon1 i.fa-square-twitter {
+    background-color: #1da1f2;
+}
+
+.icon1 i.fa-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.icon1 i.fa-whatsapp {
+    background-color: #25d366;
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        height: auto;
+        text-align:left;
+    }
+
+    .text-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+}

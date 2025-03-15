@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical HealthCare</title>
+ 
+    <!-- --------------------------CSS Link----------------------------- -->
+    <link rel="stylesheet" href="index.css">
+ 
+    <!-- --------------------------Favicon (Font Awesome)----------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!---------------------Google Fonts---------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+    <!----------------------Bootstrap CDN-------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top " style="background-color: rgba(92, 86, 86, 0.981);height: 70px;">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 40px; color: chartreuse;">
+            <i class="fa-solid fa-heart-pulse" style="color: rgb(208, 208, 244);"></i> Medical
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            </ul>
+            </div>
+    </div>
+</nav>
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- Hero Section -->
+<div id="home" class="hero">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/736x/5e/6b/1c/5e6b1c6a633aeeaa013312b69c89ab11.jpg" class="d-block w-100" alt="Hospital Image 1">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h1 style="color: black;">We Care for Your Health Every Moment</h1>
+                    <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn btn-success">Get Started</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/clipboard-stethoscope_23-2148519763.jpg?t=st=1741783449~exp=1741787049~hmac=c51eb9a34e95d2d18bb8490be2db193a44309be90602d0a2466e7f6e8dad7e09&w=1800" class="d-block w-100" alt="Hospital Image 2">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h1 style="color: black;">Your Health, Our Priority</h1>
+                    <p style="color: black;">Committed to providing the best healthcare services.</p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://www.airistaflow.com/wp-content/uploads/2024/11/image-1-1024x585.png" class="d-block w-100" alt="Hospital Image 3">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h1 style="color: black;">Advanced Healthcare for a Better Future</h1>
+                    <p style="color: black;">We offer world-class medical care and facilities.</p>
+                    <a href="#" class="btn btn-success">Contact Us</a>
+                </div>
+            </div>
+        </div>
+ 
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+ 
+ 
+ 
+<!-- Appointment Form -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="appointment-form">
+                <h3 class="text-center">Book an Appointment</h3>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Patient Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Date of Birth">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control">
+                            <option>Select Disease Type</option>
+                            <option>General Checkup</option>
+                            <option>Cardiology</option>
+                            <option>Neurology</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Appointment Date">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+ 
+ 
+<!-- -----------------About Section -------------->
+<section id="about" class="doctor-section">
+    <h1 style="text-align: center;padding-bottom: 30px;">About Us</h1>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://img.freepik.com/free-photo/happy-doctor-holding-clipboard-with-patients_1098-2176.jpg?semt=ais_hybrid" alt="Doctor and Patient" class="doctor-img">
+            </div>
+            <div class="col-md-6">
+                <h4>Get Amazing Support With Our Doctors</h4>
+                <p>Having a team of dedicated and experienced medical professionals ensures top-notch healthcare services. Our doctors are here to provide you with personalized care and support.</p>
+                <div class="info-box">
+                    <strong>Email:</strong> info@webmail.com
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- ----------------------------section4---------------------->
+<section id="doctors" class="specialists-section">
+    <h1 style="text-align: center;padding-bottom:-20px;">Doctors</h1>
+        <div class="container">
+            <h2 class="mb-4">Meet Our <span class="text-primary">Medical Specialists</span></h2>
+            <p>We bring specialized medical professionals with years of experience and expertise.</p>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="specialist-card p-3 text-center">
+                        <img src="https://i.pinimg.com/736x/c5/a3/90/c5a3904b38eb241dd03dd30889599dc4.jpg" alt="Dr. Thomas">
+                        <h5>Dr. Thomas</h5>
+                        <p>Cardiologist</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="specialist-card p-3 text-center">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small_2x/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg" alt="Dr. Ann Maria">
+                        <h5>Dr.Ann Maria</h5>
+                        <p>Neurologist</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="specialist-card p-3 text-center">
+                        <img src="https://t4.ftcdn.net/jpg/06/47/16/29/360_F_647162966_SFu8GP6awkeW0OnFnAxPjiGXSoeme4ht.jpg" alt="Dr. Isaac">
+                        <h5>Dr.Isaac</h5>
+                        <p>Orthopedic</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="specialist-card p-3 text-center">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/028/287/555/small_2x/an-indian-young-female-doctor-isolated-on-green-ai-generated-photo.jpg" alt="Dr. Varghese">
+                        <h5>Dr. Varghese</h5>
+                        <p>Dermatologist</p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+ 
+<!-- ------------------------contact----------------- -->
+<div id="contact" class="container mt-5">
+    <h3 style="padding-bottom: 40px;text-align: center;font-weight: 500; font-size:2.2rem;">Contact</h3>
+    <div class="row">
+       
+        <!-- Consultation Form -->
+        <div class="col-md-6" >
+            <div class="consultation-form">
+                <h4 class="text-center">Free Consultation</h4>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Phone Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control">
+                            <option>Select Services</option>
+                            <option>Service 1</option>
+                            <option>Service 2</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control">
+                            <option>Select Hospital</option>
+                            <option>Hospital 1</option>
+                            <option>Hospital 2</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="datetime-local" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+ 
+        <!--------------------- Business Hours -------------------------->
+        <div class="col-md-6 py-3">
+            <div class="business-hours text-center">
+                <h4>Business Hours</h4>
+                <p><strong>OPENING DAYS:</strong><br> Monday - Friday: 9am to 6pm<br> Saturday - 9am to 2pm</p>
+                <p><strong>VACATIONS:</strong><br> All Sunday Days <br> All Official Holidays</p>
+                <p class="emergency">FOR EMERGENCY CONTACT</p>
+                <h5>(+91) 123 456 7890</h5>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+ 
+<!-- -------------------------------our services--------------------------- -->
+ 
+<div id="services" class="container text-center mt-5">
+        <h6 class="text-primary">Our Services</h6>
+        <h2 class="fw-bold">High Quality Services For You</h2>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="service-card dental">
+                    <div class="icon">🦷</div>
+                    <h4>Dental Care</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn btn-dark">Read More</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card eye">
+                    <div class="icon">👁</div>
+                    <h4>Eye Care</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn btn-dark">Read More</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card skin">
+                    <div class="icon">😊</div>
+                    <h4>Skin Care</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn btn-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+ 
+<!------------------------footer-------------------------------->
+<div class="container mt-5">
+    <div class="banner p-4">
+        <div class="text-content">
+            <h1>Your Health <br> <strong>Is Important</strong></h1>
+            <p>Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity.</p>
+            <p style="color: black;"><strong>+91 123 456 789</strong><br>www.loremipsum.com</p>
+            <div class="icon1">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://img.freepik.com/premium-vector/medical-healthcare-facebook-cover-post-web-promotion-banner-template_544892-210.jpg" style="height:200px; width: 100%;">
+        </div>
+ 
+       
+    </div>
+    <div class="copyright text-center mt-3" style="font-weight: bold;">
+    <p>&copy; 2025 YourCompany. All Rights Reserved.</p>
+    </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ 
+<!-- ------------------JavaScript & jQuery---------------- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>
+ 
